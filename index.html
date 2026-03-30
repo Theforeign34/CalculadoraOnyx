@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Onyx Calc</h1>
+      <svg class="cal"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-calculator-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5m0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5M7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5m.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5z"
+        />
+      </svg>
+    </nav>
+
+    <div class="contenido">
+    <div class="calculadoraContainer">
+    <div class="padre">
+      <input type="text" name="pantalla" disabled />
+      <input type="text" name="pantallaResultados" disabled />
+    </div>
+    <div class="botones">
+      <table>
+        <tr>
+          <!--fila 1-->
+          <td><button class="btnBorrar borrar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+  <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+</svg></button></td>
+          <td><button class="eliminar back"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+  <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8z"/>
+</svg></button></td>
+          
+          <td><button class="potencia">x²</button></td>
+          <td><button class="division azul">/</button></td>
+        </tr>
+        <!--fila 2-->
+        <tr>
+          <td><button class="btn verde">7</button></td>
+          <td><button class="btn verde">8</button></td>
+          <td><button class="btn verde">9</button></td>
+          <td><button class="multiplicacion azul">x</button></td>
+        </tr>
+
+        <!--fila 3-->
+        <tr>
+          <td><button class="btn verde">4</button></td>
+          <td><button class="btn verde">5</button></td>
+          <td><button class="btn verde">6</button></td>
+          <td><button class="resta azul">-</button></td>
+        </tr>
+        <!--fila 4-->
+        <tr>
+          <td><button class="btn verde">1</button></td>
+          <td><button class="btn verde">2</button></td>
+          <td><button class="btn verde">3</button></td>
+          <td><button class="suma azul">+</button></td>
+        </tr>
+        <!--fila 5-->
+        <tr>
+          <td><button class="masMenos  verde">+/-</button></td>
+          <td><button class="btn verde">0</button></td>
+          <td><button class="punto  verde">.</button></td>
+          <td><button class="igual azul">=</button></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+      <div class="historial">
+        <button class="borrar-historial">Borrar historial 🧹</button>
+        </div>
+      </div>
+
+      <div class="informacionContainer">
+        <h3>Bienvenidos a Onix Calc</h3>
+        <p>
+            Onyx Calc es una calculadora sencilla que ayuda al usuario a resolver operaciones aritméticas básicas, tales como suma, resta, multiplicación y división, entre otras. 
+            Brinda una interfaz elegante e intuitiva que garantiza una experiencia fluida y agradable. Además, incluye un sistema de historial que permite consultar operaciones realizadas previamente.
+        </p>
+      </div>
+    <script src="main.js"></script>
+  </body>
+</html>
